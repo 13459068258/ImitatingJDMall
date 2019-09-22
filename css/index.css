@@ -1,0 +1,158 @@
+/* 中间分类模块 */
+
+img {
+    vertical-align: top;
+}
+
+.grid {
+    height: 480px;
+}
+
+.grid-col1 {
+    width: 190px;
+    height: 100%;
+    background-color: #6e6568;
+    color: #fff;
+    font-size: 16px;
+}
+
+.grid-col1 ul {
+    padding-top: 10px;
+}
+
+.grid-col1 ul li {
+    padding-left: 12px;
+    height: 29px;
+    line-height: 29px;
+}
+
+.grid-col1 ul li:hover {
+    background-color: #9c9698;
+}
+
+.grid-col1 a {
+    color: #fff;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.grid-col1 a:hover {
+    color: #f10215;
+}
+
+.grid-col2 {
+    width: 790px;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.grid-col2-b div {
+    float: left;
+    margin-top: 10px;
+}
+
+.grid-col2-b div:last-child {
+    float: right;
+}
+
+.grid-col2-t {
+    position: relative;
+
+}
+
+.arrow-l, 
+.arrow-r {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 60px;
+    background-color: rgba(77, 75, 75, 0.26);
+    transform: translateY(-50%);
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.418);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.arrow-l {
+    left: 0;
+}
+
+.arrow-r{
+    right: 0;
+}
+
+.circle {
+    width: 165px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.418);
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    border-radius: 10px; 
+    padding-left: 6px;
+}
+
+.circle li {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%; 
+    float: left;
+    margin: 4px 4px 0;
+    cursor: pointer;
+}
+
+.circle .current {
+    background-color: red;
+}
+
+/* 右边模块 */
+.grid-col3 {
+    width: 190px;
+    height: 100%;
+    float: right;
+}
+
+/* 登录模块 */
+.login {
+    height: 85px;
+    background-color: pink;
+    border-bottom: 1px solid #fff;
+    padding: 15px;
+}
+
+.login-t {
+    width: 95px;
+    height: 60px;
+    line-height: 20px;
+    font-size: 12px;
+    padding-left: 60px;
+    color: #666;
+}
+
+.login-t a{
+    color: #666;
+}
+
+.login-t a:hover {
+    color: red;
+}
+
+/* 新闻模块 */
+.news {
+    height: 155px;
+    border-bottom: 1px solid #fff;
+    background-color: pink;
+    
+}
+
+/* 服务拓展模块 */
+.expend {
+    height: 208px;
+    background-color: pink;
+
+}
