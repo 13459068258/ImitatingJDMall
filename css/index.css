@@ -5,6 +5,24 @@ img {
 }
 
 .grid {
+    position: relative;
+    height: 480px;
+}
+
+.ad {
+    position: absolute;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 480px;
+    cursor: pointer;
+}
+
+.ad-r {
+    z-index: 999;
+    position: absolute;
+    top:0;
+    left: 250px;
     height: 480px;
 }
 
@@ -57,11 +75,9 @@ img {
 
 .grid-col2-t {
     position: relative;
-
 }
 
-.arrow-l, 
-.arrow-r {
+.arrow-l, .arrow-r {
     position: absolute;
     top: 50%;
     width: 30px;
@@ -80,7 +96,7 @@ img {
     left: 0;
 }
 
-.arrow-r{
+.arrow-r {
     right: 0;
 }
 
@@ -92,7 +108,7 @@ img {
     left: 50%;
     bottom: 20px;
     transform: translateX(-50%);
-    border-radius: 10px; 
+    border-radius: 10px;
     padding-left: 6px;
 }
 
@@ -100,7 +116,7 @@ img {
     width: 12px;
     height: 12px;
     background-color: #fff;
-    border-radius: 50%; 
+    border-radius: 50%;
     float: left;
     margin: 4px 4px 0;
     cursor: pointer;
@@ -111,6 +127,7 @@ img {
 }
 
 /* 右边模块 */
+
 .grid-col3 {
     width: 190px;
     height: 100%;
@@ -118,14 +135,16 @@ img {
 }
 
 /* 登录模块 */
+
 .login {
     height: 85px;
-    background-color: pink;
+    background-color: #fff;
     border-bottom: 1px solid #fff;
     padding: 15px;
 }
 
 .login-t {
+    position: relative;
     width: 95px;
     height: 60px;
     line-height: 20px;
@@ -134,7 +153,22 @@ img {
     color: #666;
 }
 
-.login-t a{
+.user-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: url(../img/sprite_userinfo@1x.png) no-repeat;
+}
+
+.user-info img {
+    width: 40px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.login-t a {
     color: #666;
 }
 
@@ -142,17 +176,84 @@ img {
     color: red;
 }
 
+.login-b a {
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+    margin-right: 3px;
+    border: 2px red solid;
+    text-align: center;
+    line-height: 20px;
+}
+
+.login-b a:hover {
+    background-color: red;
+    color: white;
+}
+
 /* 新闻模块 */
+
 .news {
     height: 155px;
     border-bottom: 1px solid #fff;
-    background-color: pink;
-    
+}
+
+.new-t {
+    position: relative;
+    height: 19px;
+    border-bottom: 1px solid #ccc;
+}
+
+.new-t a {
+    float: left;
+    height: 17px;
+    line-height: 17px;
+    text-align: center;
+}
+
+.promotion {
+    width: 38px;
+    border-right: 1px solid #ccc;
+}
+
+.notice {
+    width: 38px;
+    text-align: center;
+}
+
+.new-t .more {
+    float: right;
+}
+
+.new-t div {
+    position: absolute;
+    bottom: -1px;
+    width: 28px;
+    height: 2px;
+    background-color: red;
+}
+
+.new-b ul {
+    margin-top: 15px;
+    height: 23px;
+    line-height: 23px;
 }
 
 /* 服务拓展模块 */
+
 .expend {
     height: 208px;
-    background-color: pink;
+    overflow: hidden;
+}
 
+.expend ul {
+    width: 195px;
+}
+
+.expend li {
+    float: left;
+    width: 47px;
+    height: 69px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
